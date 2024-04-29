@@ -36,13 +36,13 @@ map_list = ["choropleth_mapbox",
             "density_mapbox"]
 
 
-radio_b1 = dcc.RadioItems(id="radio_b1", options=basic_chart_list, value="scatter")
+radio_b1 = dcc.RadioItems(id="radio_b1", options=basic_chart_list, value="scatter", labelStyle={'display': 'inline-block', 'margin-right': '10px')
 my_graph1 = dcc.Graph(id="basic_chart")
-radio_b2 = dcc.RadioItems(id="radio_b2", options=statistical_chart_list, value="density_heatmap")
+radio_b2 = dcc.RadioItems(id="radio_b2", options=statistical_chart_list, value="density_heatmap", labelStyle={'display': 'inline-block', 'margin-right': '10px')
 my_graph2 = dcc.Graph(id="statistical_chart")
-radio_b3 = dcc.RadioItems(id="radio_b3", options=scientific_chart_list, value="imshow")
+radio_b3 = dcc.RadioItems(id="radio_b3", options=scientific_chart_list, value="imshow", labelStyle={'display': 'inline-block', 'margin-right': '10px')
 my_graph3 = dcc.Graph(id="scientific_chart")
-radio_b4 = dcc.RadioItems(id="radio_b4", options=map_list, value="choropleth_mapbox")
+radio_b4 = dcc.RadioItems(id="radio_b4", options=map_list, value="choropleth_mapbox", labelStyle={'display': 'inline-block', 'margin-right': '10px')
 my_graph4 = dcc.Graph(id="maps")
 
 layout = html.Div(
