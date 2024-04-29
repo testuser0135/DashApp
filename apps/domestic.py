@@ -174,9 +174,9 @@ def update_table(value_chosen):
     df_result = pd.DataFrame()
     df_result['quoter'] = df_uriage['quoter']
     df_result['売上高'] = df_uriage[value_chosen] 
-    df_result['売上高総利益率'] =  180 / df_uriage[value_chosen]  # 値は架空 本当は、df_sourieki[value_chosen] / df_uriage[value_chosen] にしたい
+    df_result['売上高総利益率'] =  180 / df_uriage[value_chosen]  # 値は架空 本当は、df_sourieki[value_chosen] / df_uriage[value_chosen]
     # 列追加②「(売上高)営業利益率」
-    df_result['営業利益率'] = 120 / df_uriage[value_chosen]  # 値は架空 本当は、df_eigyorieki[value_chosen] / df_uriage[value_chosen] にしたい
+    df_result['営業利益率'] = 120 / df_uriage[value_chosen]  # 値は架空 本当は、df_eigyorieki[value_chosen] / df_uriage[value_chosen]
     # 列追加③「(売上高)経常利益率」
     df_result['経常利益率'] = 90 / df_uriage[value_chosen]  # 値は架空
     # 列追加④「(売上高)当期純利益率」

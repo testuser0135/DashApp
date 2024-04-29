@@ -119,10 +119,12 @@ layout = html.Div(
                     figure=px.line(
                         data_frame=nikkei_stock_average,
                         x="year",
-                        y="stock_price"
+                        y="stock_price", 
+                        title="日経平均株価"
                     )
                 )
             ]
-        )
+        ),
+        "home"
     ]
 )

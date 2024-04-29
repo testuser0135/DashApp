@@ -7,7 +7,7 @@ import plotly.express as px
 import pandas as pd
 
 from app import app
-from apps import home, domestic, world, study, contact, study_article1
+from apps import home, domestic, world, study, contact, study_article1, chart
 
 app.layout = html.Div(
     id="all-body",
@@ -27,7 +27,8 @@ app.layout = html.Div(
                         dbc.DropdownMenuItem("国内企業", href="/domestic"),
                         dbc.DropdownMenuItem("海外企業", href="/world"),
                         dbc.DropdownMenuItem("経済・金融を学ぶ", href="/study"),
-                        dbc.DropdownMenuItem("お問い合わせ", href="/contact")
+                        dbc.DropdownMenuItem("お問い合わせ", href="/contact"), 
+                        dbc.DropdownMenuItem("チャート一覧", href="/chart")
                     ],
                     nav=True,
                     in_navbar=True,
@@ -73,6 +74,8 @@ def display_page(pathname):
         return study.layout
     elif pathname == "/contact":
         return contact.layout
+    elif pathname == "/chart":
+        return chart.layout
     elif pathname == "/study_article1":
         return study_article1.layout
     else:
@@ -80,4 +83,5 @@ def display_page(pathname):
 
 if __name__ == '__main__':
     app.run_server(host = '0.0.0.0', port = 10000, debug = True)
+    # app.run_server(host = '127.0.0.1', port = 8050, debug = True)
     # app.run_server(debug=True)
