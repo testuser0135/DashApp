@@ -34,12 +34,12 @@ layout = html.Div(
                         # dbc.CardImg(src="/static/images/placeholder286x180.png", top=True),
                         dbc.CardBody(
                             [
-                                html.H4("経済をざっくり学ぶ", className="card-title"),
+                                html.H4("金融をざっくり学ぶ", className="card-title"),
                                 html.P(
-                                    "Some quick example text",
+                                    "執筆中",
                                     className="card-text",
                                 ),
-                                dbc.Button("Go somewhere", color="primary", href="/study_article1"),
+                                dbc.Button("執筆中の記事を見る", color="primary", href="/study_article1"),
                             ]
                         )
                     ]
