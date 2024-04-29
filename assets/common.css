@@ -1,0 +1,12 @@
+/* これ一旦なしで。ない方がちょうど良さそう
+#common-subtitle-component {
+    padding: 2% 0%; /* 内部余白、上下0%、左右0% 
+}
+*/
+
+#common-subtitle {
+    text-align: center;
+    width: 100%;
+    font-size: 4vh;
+    border-bottom: solid 3px #87CEFA;
+}

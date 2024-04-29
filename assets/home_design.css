@@ -1,0 +1,33 @@
+
+
+#img-wrap {
+    position: relative;
+    background-image: url("futuristic.jpg");
+    padding-bottom: calc(100%*960/1920);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#img-wrap-inner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border: 2px solid #ccc; /* ブロック要素の大きさがわかりやすいようにとりあえずborder加工しておく */
+    color: white;
+}
+
+#text1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#topnews-block {
+    padding: 5%;
+    text-align: center;
+}
+
+#news-block {
+    padding: 2%;
+}
