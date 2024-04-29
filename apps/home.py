@@ -123,7 +123,6 @@ layout = html.Div(
                     )
                 )
             ]
-        ),
-        "home"
+        )
     ]
 )
