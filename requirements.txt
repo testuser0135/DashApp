@@ -5,4 +5,4 @@ plotly
 gunicorn
 dash-bootstrap-components==0.11.3
 dash-table
-skimage
+scikit-image
