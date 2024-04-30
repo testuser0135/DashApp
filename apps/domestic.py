@@ -49,7 +49,7 @@ layout = html.Div(
                     options=[{"label": c, "value": c} for c in crp_list],
                     searchable=False,
                     # 初期値として選択肢のいずれかを設定しておかないとエラーになる
-                    value="NTTデータ"
+                    value="ソフトバンク"
                 ),
                 # グラフ
                 dcc.Graph(
